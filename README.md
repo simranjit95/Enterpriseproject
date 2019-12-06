@@ -67,3 +67,36 @@ res.send(result);
   });
 });
 });
+
+///result
+db.staff.find().pretty()
+{
+        "_id" : ObjectId("5d8e78c85710ff3ad231102f"),
+        "sid" : 100,
+        "password" : "abc",
+        "designation" : "event manager"
+}
+{
+        "_id" : ObjectId("5d8e78d95710ff3ad2311030"),
+        "sid" : 110,
+        "password" : "abcd",
+        "designation" : "operational Manager"
+}
+{
+        "_id" : ObjectId("5d8e79395710ff3ad2311031"),
+        "sid" : 111,
+        "password" : "bcd",
+        "designation" : "event manager"
+}
+{
+        "_id" : ObjectId("5d8e795d5710ff3ad2311032"),
+        "sid" : 112,
+        "password" : "888cd",
+        "designation" : "event supervisor"
+}
+{
+        "_id" : ObjectId("5de9d8ebc6e9796c041e9c52"),
+        "sid" : "113",
+        "password" : "aaabb",
+        "designation" : "event organiser"
+}
