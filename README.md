@@ -50,3 +50,20 @@ db.close();
  });
 });
 });
+//post services to insert document into staff collection.
+app.post('/API/as/st/', (req, res)=>{
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://localhost:27017/";
+
+MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  var dbo = db.db("event_management_system");
+  var myobj = { sid:113,password: "aaabb", designation:"event organiser"};
+  dbo.collection("staff").insertOne(myobj, function(err, result) {
+    if (err) throw err;
+    console.log("1 document inserted");
+res.send(result);
+    db.close();
+  });
+});
+});
